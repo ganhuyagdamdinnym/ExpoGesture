@@ -5,16 +5,16 @@ import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { useEffect } from "react";
-import { fetchData } from "@/utils/google-api";
+// import { fetchData } from "@/utils/google-api";
 
 export default function HomeScreen() {
-  useEffect(() => {
-    try {
-      fetchData();
-    } catch (error) {
-      console.error("Error fetching data from Google Sheets API:", error);
-    }
-  }, []);
+  // useEffect(() => {
+  //   try {
+  //     fetchData();
+  //   } catch (error) {
+  //     console.error("Error fetching data from Google Sheets API:", error);
+  //   }
+  // }, []);
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
